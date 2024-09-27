@@ -1,1 +1,45 @@
 // Navigation Styles here
+.navbar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin-left:25%;
+    border-bottom: 2px dotted lightgray;
+    width:50%;
+    @media @mobile{
+        width:100%;
+        margin-left:0;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        .text-change();
+        width:25%;
+        margin-left:7%;
+        font-family:@header-font;
+        @media @mobile{
+            margin-right:4%;
+        }
+    }
+    nav{
+        width:50%;
+        margin:auto;
+        margin-left:43%;
+        @media @mobile{
+            margin:0;
+            width:100%;
+            display:flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+        }
+    }
+    Nav a{
+        font-size:1.4rem;
+        text-decoration:none;
+        color:black;
+        margin-right:4%;
+    }
+
+}
